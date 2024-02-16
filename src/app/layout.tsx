@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.scss";
 
+import Button from "../components/Button";
+
 const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,8 +19,20 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={font.className}>
-              <header>hi</header>
-              {children}
+                <header>
+                    <nav>
+                        <div className="logo">COMPANY LOGO</div>
+                        <div className="menu-container">
+                            <span>About</span>
+                            <span>Services</span>
+                            <span>FAQs</span>
+                            <span>News</span>
+                        </div>
+                        <Button label="Contact us" secondary />
+                    </nav>
+                </header>
+                {children}
+                <footer>Footer section</footer>
             </body>
         </html>
     );

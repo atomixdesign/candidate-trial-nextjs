@@ -1,13 +1,44 @@
-$primary-color: #CCAE92;
-$primary-accent: #EFEAE5; 
+@import "../variables.scss";
 
-$secondary-color: #F7F7F7;
-
-$text-color: #4B4F52;
+:root {
+    font-size: 16px;
+    font-weight: 400;
+}
 
 body {
     background-color: white;
     color: $text-color;
     padding: 0;
     margin: 0;
+    position: relative;
+
+    button {
+        font-family: inherit;
+        font-weight: inherit;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem;
+        font-weight: 600;
+    
+        .menu-container {
+            display: flex;
+            column-gap: 4rem;
+        }
+    
+    }
+
+    section {
+        padding: 0 2rem;
+    }
+    
+    .logo {
+        font-size: 2rem;
+        letter-spacing: 3px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }

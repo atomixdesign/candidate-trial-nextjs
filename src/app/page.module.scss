@@ -1,0 +1,14 @@
+.hero-container {
+    background-image: url('/images/hero-image.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50rem;
+
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+}
