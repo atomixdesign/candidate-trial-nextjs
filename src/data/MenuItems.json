@@ -1,0 +1,234 @@
+[
+    {
+        "title": "About",
+        "url": "#",
+        "menu": [
+            {
+                "title": "About sample link 1",
+                "url": "#",
+                "subMenu": [
+                    {
+                        "title": "About menu item 1",
+                        "url": "#"
+                    },
+                    {
+                        "title": "About menu item 2",
+                        "url": "#"
+                    },
+                    {
+                        "title": "About menu item 3",
+                        "url": "#"
+                    },
+                    {
+                        "title": "About menu item 4",
+                        "url": "#"
+                    },
+                    {
+                        "title": "About menu item 5",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "title": "About sample link 2",
+                "url": "#",
+                "subMenu": [
+                    {
+                        "title": "About menu item 1",
+                        "url": "#"
+                    },
+                    {
+                        "title": "About menu item 2",
+                        "url": "#"
+                    },
+                    {
+                        "title": "About menu item 3",
+                        "url": "#"
+                    },
+                    {
+                        "title": "About menu item 4",
+                        "url": "#"
+                    },
+                    {
+                        "title": "About menu item 5",
+                        "url": "#"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Services",
+        "url": "#",
+        "menu": [
+            {
+                "title": "Services sample link 1",
+                "url": "#",
+                "subMenu": [
+                    {
+                        "title": "Services menu item 1",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Services menu item 2",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Services menu item 3",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Services menu item 4",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Services menu item 5",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "title": "Services sample link 2",
+                "url": "#",
+                "subMenu": [
+                    {
+                        "title": "Services menu item 1",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Services menu item 2",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Services menu item 3",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Services menu item 4",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Services menu item 5",
+                        "url": "#"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "FAQs",
+        "url": "#",
+        "menu": [
+            {
+                "title": "FAQs sample link 1",
+                "url": "#",
+                "subMenu": [
+                    {
+                        "title": "FAQs menu item 1",
+                        "url": "#"
+                    },
+                    {
+                        "title": "FAQs menu item 2",
+                        "url": "#"
+                    },
+                    {
+                        "title": "FAQs menu item 3",
+                        "url": "#"
+                    },
+                    {
+                        "title": "FAQs menu item 4",
+                        "url": "#"
+                    },
+                    {
+                        "title": "FAQs menu item 5",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "title": "FAQs sample link 2",
+                "url": "#",
+                "subMenu": [
+                    {
+                        "title": "FAQs menu item 1",
+                        "url": "#"
+                    },
+                    {
+                        "title": "FAQs menu item 2",
+                        "url": "#"
+                    },
+                    {
+                        "title": "FAQs menu item 3",
+                        "url": "#"
+                    },
+                    {
+                        "title": "FAQs menu item 4",
+                        "url": "#"
+                    },
+                    {
+                        "title": "FAQs menu item 5",
+                        "url": "#"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "News",
+        "url": "#",
+        "menu": [
+            {
+                "title": "News sample link 1",
+                "url": "#",
+                "subMenu": [
+                    {
+                        "title": "News menu item 1",
+                        "url": "#"
+                    },
+                    {
+                        "title": "News menu item 2",
+                        "url": "#"
+                    },
+                    {
+                        "title": "News menu item 3",
+                        "url": "#"
+                    },
+                    {
+                        "title": "News menu item 4",
+                        "url": "#"
+                    },
+                    {
+                        "title": "News menu item 5",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "title": "News sample link 2",
+                "url": "#",
+                "subMenu": [
+                    {
+                        "title": "News menu item 1",
+                        "url": "#"
+                    },
+                    {
+                        "title": "News menu item 2",
+                        "url": "#"
+                    },
+                    {
+                        "title": "News menu item 3",
+                        "url": "#"
+                    },
+                    {
+                        "title": "News menu item 4",
+                        "url": "#"
+                    },
+                    {
+                        "title": "News menu item 5",
+                        "url": "#"
+                    }
+                ]
+            }
+        ]
+    }
+]

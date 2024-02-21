@@ -1,0 +1,66 @@
+[
+    {
+        "title": "About",
+        "url": "",
+        "subMenu": [
+            {
+                "title": "About menu item 1",
+                "url": "#"
+            },
+            {
+                "title": "About menu item 2",
+                "url": "#"
+            },
+            {
+                "title": "About menu item 3",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "title": "Services",
+        "url": "",
+        "subMenu": [
+            {
+                "title": "Services menu item 1",
+                "url": "#"
+            },
+            {
+                "title": "Services menu item 2",
+                "url": "#"
+            },
+            {
+                "title": "Services menu item 3",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "title": "Footer links 1",
+        "url": "",
+        "subMenu": [
+            {
+                "title": "Footer menu item 1",
+                "url": "#"
+            },
+            {
+                "title": "Footer menu item 2",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "title": "Footer links 2",
+        "url": "",
+        "subMenu": [
+            {
+                "title": "Footer menu item 1",
+                "url": "#"
+            },
+            {
+                "title": "Footer menu item 2",
+                "url": "#"
+            }
+        ]
+    }
+]

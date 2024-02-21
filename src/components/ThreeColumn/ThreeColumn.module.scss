@@ -1,0 +1,106 @@
+.threeColumnContainer {
+    background-color: #FFFFFF;
+    max-width: 90%;
+    margin: 60px auto;
+
+    .heading {
+        color: #4B4F52;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    section {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px;
+
+        .row {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: start;
+            align-items: start;
+
+
+            .column {
+                background: #fff;
+                margin: 0 15px;
+                text-align: left;
+                -webkit-box-flex: 1;
+                flex: 1;
+                display: -webkit-box;
+                display: flex;
+                align-items: start;
+                flex-wrap: wrap;
+
+                h4 {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    color: #4B4F52;
+                    font-size: 1rem;
+                    line-height: 22px;
+                    margin: 1rem 0 1.6rem;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #4B4F52;
+                    text-align: justify;
+                    margin: 1rem 0;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 1rem 0;
+                    padding: 0;
+
+                    li {
+                        display: flex;
+                        justify-content: start;
+                        line-height: 20px;
+
+                        svg {
+                            margin-right: 10px;
+                            color: #CCAE92;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            color: #4B4F52;
+                        }
+                    }
+                }
+            }
+
+            .first_col {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .column>* {
+                flex: 1 1 100%;
+            }
+        }
+    }
+
+    @media all and (max-width:900px) {
+        section {
+            .row {
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                flex-direction: column;
+
+                .column {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
