@@ -1,0 +1,244 @@
+@import '~bootstrap/scss/mixins';
+
+@import '../variables.scss';
+
+.navbar {
+  .navbar-nav {
+    .nav-link {
+      position: relative;
+      @include media-breakpoint-down(lg) {
+        text-align: left;
+      }
+      @include media-breakpoint-down(sm) {
+        text-align: left;
+        border-bottom: solid 1px;
+        border-color: $secondary;
+        padding-left: 23px;
+        padding-right: 23px;
+      }
+      @include media-breakpoint-down(sm) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .nav-item {
+      position: static;
+      // has child items
+      &.dropdown {
+        .nav-link {
+          position: relative;
+          @include media-breakpoint-down(lg) {
+            text-align: left;
+          }
+          &::before {
+            @include media-breakpoint-down(lg) {
+              content: '\f8dd';
+              font-family: uicons-bold-rounded !important;
+              position: absolute;
+              right: 0px;
+              width: 0px;
+              height: 10px;
+              color: $primary;
+            }
+            @include media-breakpoint-down(md) {
+              content: '\f8dd';
+              font-family: uicons-bold-rounded !important;
+              position: absolute;
+              right: 45px;
+              width: 10px;
+              height: 10px;
+              color: $primary;
+            }
+          }
+        }
+        .dropdown-menu {
+          width: 100vw;
+          left: 0;
+          padding-top: 54px;
+          padding-bottom: 60px;
+          background-color: $white-400;
+          @include media-breakpoint-down(lg) {
+            background: none;
+            padding: 0;
+            border: none;
+            width: 100%;
+          }
+          .desktop-menu {
+            @include media-breakpoint-down(lg) {
+              display: none;
+            }
+            .sub-menu-wrapper {
+              .nav-link {
+                color: $black-900;
+                text-align: left;
+                margin: 0;
+                padding: 10px 0px;
+                font-weight: $font-weight-normal;
+                &:hover {
+                  color: $primary;
+                }
+                &::before {
+                  display: none;
+                }
+                &::after {
+                  display: none;
+                }
+              }
+            }
+          }
+          .mobile-menu {
+            @include media-breakpoint-up(lg) {
+              display: none;
+            }
+            .nav-item {
+              &.dropdown {
+                .nav-link {
+                  color: $black-900;
+                  font-size: 1rem;
+                  font-weight: $font-weight-semibold;
+                  padding-left: 39px;
+                  padding-top: 20px;
+                  padding-bottom: 20px;
+                  @include media-breakpoint-down(lg) {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                  }
+                  &::before {
+                    content: '\f8dd';
+                    font-family: uicons-bold-rounded !important;
+                    position: absolute;
+                    right: 37px;
+                    width: 10px;
+                    height: 10px;
+                    color: $primary;
+                    @include media-breakpoint-down(md) {
+                      right: 45px;
+                    }
+                  }
+                  &.show {
+                    background-color: $white-200;
+                    &::before {
+                      content: '\f7e8';
+                    }
+                  }
+                }
+                .dropdown-menu {
+                  .dropdown-item {
+                    font-weight: $font-weight-normal;
+                    font-size: 0.875rem;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 39px;
+                    margin-right: 39px;
+                  }
+                  &.show {
+                    background-color: $white-200;
+                  }
+                }
+              }
+            }
+          }
+        }
+        // Open sub menu item
+        &.show {
+          @include media-breakpoint-down(sm) {
+            background-color: $white-400;
+          }
+          .nav-link {
+            color: $primary;
+            &::before {
+              @include media-breakpoint-down(lg) {
+                content: '\f7e8';
+                font-family: uicons-bold-rounded !important;
+                position: absolute;
+                right: 0;
+                width: 0px;
+                height: 10px;
+                color: $primary;
+              }
+              @include media-breakpoint-down(md) {
+                content: '\f7e8';
+                font-family: uicons-bold-rounded !important;
+                position: absolute;
+                right: 45px;
+                width: 10px;
+                height: 10px;
+                color: $primary;
+              }
+            }
+            @include media-breakpoint-up(lg) {
+              &::before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 36px;
+                width: 100%;
+                height: 2px;
+                background: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+    &::after {
+      content: '\f7bd';
+      font-family: uicons-regular-rounded !important;
+      position: absolute;
+      right: 37px;
+      top: 17px;
+      width: 22px;
+      height: 34px;
+      color: $primary;
+    }
+  }
+  .navbar-toggler-icon {
+    background: none;
+  }
+}
+// Accordion Menu
+.accordion-menu {
+  .accordion-item {
+    background: none;
+    border: none;
+    .accordion-button {
+      background: none;
+      border: none;
+      font-weight: $font-weight-bold;
+      &:focus {
+        box-shadow: none;
+      }
+      &::after {
+        display: none;
+      }
+      &::before {
+        content: '\f7e8';
+        font-family: uicons-bold-rounded !important;
+        position: absolute;
+        right: 23px;
+        color: $primary;
+      }
+      &.collapsed {
+        &::before {
+          content: '\f8dd';
+        }
+      }
+    }
+    .accordion-body {
+      ul {
+        li {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}

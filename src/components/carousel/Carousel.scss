@@ -1,0 +1,32 @@
+@import '~bootstrap/scss/mixins';
+
+@import '@/app/assets/scss/variables.scss';
+
+.carousel {
+  .carousel-indicators {
+    @include media-breakpoint-down(sm) {
+      bottom: -71px;
+    }
+  }
+  .carousel-indicators button {
+    width: 0.688rem;
+    height: 0.688rem;
+    border-radius: 50%;
+    background-color: $secondary;
+    &.active {
+      background-color: $primary;
+    }
+  }
+  .carousel-control-prev {
+    left: -145px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  .carousel-control-next {
+    right: -145px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+}

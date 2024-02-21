@@ -1,0 +1,31 @@
+// colours
+$primary: #ccae92;
+$secondary: #efeae5;
+$white: #ffffff;
+$white-200: #faf5f0;
+$white-400: #f7f7f7;
+$black-700: #707070;
+$black-800: #4c5760;
+$black-900: #4b4f52;
+
+// weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// buttons
+$btn-font-weight: $font-weight-bold;
+$btn-font-size: 1rem;
+$btn-padding-x: 19px;
+$btn-padding-y: 13px;
+
+// screen sizes
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);

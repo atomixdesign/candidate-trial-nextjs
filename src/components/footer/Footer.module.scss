@@ -1,0 +1,80 @@
+@import '~bootstrap/scss/mixins';
+
+@import '../../app/assets/scss/variables.scss';
+
+.footer {
+  background-color: $white-400;
+  padding-top: 116px;
+  padding-bottom: 125px;
+  .logo {
+    padding-bottom: 48px;
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
+  }
+  h6 {
+    margin-bottom: 23px;
+    font-weight: $font-weight-bold;
+  }
+  ul {
+    padding-left: 0px;
+    li {
+      list-style: none;
+      margin-bottom: 17.5px;
+      a {
+        text-decoration: none;
+        color: $black-900;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+  .desktopMenu {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+  .mobileMenu {
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+  hr {
+    color: $secondary;
+    margin-top: 67.94px;
+    margin-bottom: 46.06px;
+    @include media-breakpoint-up(lg) {
+      margin-top: 52px;
+      margin-bottom: 52px;
+    }
+  }
+  .quickLinks {
+    li {
+      display: inline-block;
+      margin-right: 40px;
+      @include media-breakpoint-down(lg) {
+        display: block;
+        text-align: center;
+        margin-right: 0px;
+      }
+    }
+  }
+  .socialMedia {
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+    li {
+      display: inline-block;
+      a {
+        font-size: 10px;
+        margin-left: 20px;
+        font-size: 1.125rem;
+        color: $primary;
+        @include media-breakpoint-down(md) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

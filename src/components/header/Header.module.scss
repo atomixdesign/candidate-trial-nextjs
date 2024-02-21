@@ -1,0 +1,67 @@
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+@import '../../app/assets/scss/variables.scss';
+
+.header {
+  padding-top: 48px;
+  padding-right: 45px;
+  padding-bottom: 50px;
+  @include media-breakpoint-down(md) {
+    padding: 0 !important;
+  }
+  @include media-breakpoint-down(lg) {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  a {
+    margin-left: 44px;
+    margin-right: 44px;
+    font-weight: $font-weight-bold;
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+    }
+  }
+
+  .logo {
+    margin-left: 45px;
+    margin-right: 0px;
+    @include media-breakpoint-down(sm) {
+      margin-left: 20px;
+    }
+    img {
+      @include media-breakpoint-down(sm) {
+        width: 193px;
+        height: 24px;
+      }
+    }
+  }
+
+  .contactUs {
+    margin-left: 168px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 49px;
+      margin-bottom: 49px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+.container {
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
+}
+.toggler {
+  @include media-breakpoint-down(sm) {
+    margin-right: 20px;
+  }
+}
+.navbarCollapse {
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+}

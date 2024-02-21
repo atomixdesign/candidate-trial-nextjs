@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Kym Williams",
+    "principle": "Managing Director",
+    "imageSrc": "/team/kym-williams.png",
+    "imgAlt": "image of ym Williams"
+  },
+  {
+    "id": 2,
+    "name": "Angus Mitchell",
+    "principle": "Associate",
+    "imageSrc": "/team/angus -mitchell.png",
+    "imgAlt": "image of Angus Mitchell"
+  },
+  {
+    "id": 3,
+    "name": "Anita Payne",
+    "principle": "Associate",
+    "imageSrc": "/team/anita-payne.png",
+    "imgAlt": "image of Anita Payne"
+  },
+  {
+    "id": 4,
+    "name": "Kym Williams",
+    "principle": "Managing Director",
+    "imageSrc": "/team/kym-williams-2.png",
+    "imgAlt": "image of Kym Williams"
+  },
+  {
+    "id": 5,
+    "name": "Amy Cole",
+    "principle": "Associate",
+    "imageSrc": "/team/amy-cole.png",
+    "imgAlt": "image of Amy Cole"
+  },
+  {
+    "id": 6,
+    "name": "David Brown",
+    "principle": "Managing Director",
+    "imageSrc": "/team/david-brown.png",
+    "imgAlt": "image of David Brown"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "logoImagePath": "/company-logo.png",
+  "logoImageAlt": "Company Logo",
+  "about": {
+    "imagePath": "/mega-menu-image-1.png",
+    "imageAlt": "Mega menu image"
+  }
+}
