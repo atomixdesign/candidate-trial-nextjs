@@ -1,0 +1,140 @@
+.bannerSec {
+    width: 100%;
+}
+
+.bannerImg {
+    width: 100%;
+    position: relative;
+
+    .mobImg {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: calc(100vh - 80px);
+    }
+}
+
+.bannerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    margin: 0 15%;
+    // margin: auto;
+    text-align: center;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    strong {
+        color: #4B4F52;
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 800;
+
+        span {
+            letter-spacing: 2px;
+        }
+    }
+
+    .btnDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .bannerText {
+        strong {
+            font-size: 50px;
+            line-height: 50px;
+
+            span {
+                font-size: 37px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .bannerText {
+        strong {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .bannerImg {
+        img {
+            width: 100%;
+            height: calc(100vh - 60px);
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .bannerImg {
+        img {
+            min-height: 290px;
+            object-fit: cover;
+        }
+    }
+
+    .bannerText {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .bannerImg {
+        img {
+            width: 100%;
+            // height: 90vh;
+        }
+    }
+
+    .bannerText {
+        strong {
+            padding: 10px;
+            width: 100%;
+            display: block;
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .bannerImg {
+        .webImg {
+            display: none;
+        }
+
+        .mobImg {
+            display: block;
+        }
+    }
+
+    .bannerText {
+        left: 2%;
+
+        strong {
+            font-size: 28px;
+            line-height: 35px;
+            letter-spacing: 1px;
+        }
+    }
+}

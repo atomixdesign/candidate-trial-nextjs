@@ -1,0 +1,51 @@
+.card {
+    margin: 0 auto;
+    max-width: 320px;
+    height: fit-content;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #F7F7F7;
+
+    .card-hero {
+        img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+    }
+
+    .card-header {
+        padding: 30px 16px;
+
+        h4 {
+            padding: 0;
+            margin-bottom: 15px;
+            margin-top: 0;
+            color: #CCAE92;
+        }
+
+        h3 {
+            margin: 0;
+            color: #4B4F52;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .card {
+        max-width: 280px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .card {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        max-width: 320px;
+    }
+}
