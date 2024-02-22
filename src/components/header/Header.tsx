@@ -10,7 +10,7 @@ import routesHelper from '@/helpers/routes';
 import { Header } from '@/definitions/definitions';
 import Weather from './weather/Weather';
 
-import styles from './header.module.scss';
+import styles from './Header.module.scss';
 
 function Header({ headerData }: { headerData: Header | false }) {
   if (!headerData) {
