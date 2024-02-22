@@ -9,7 +9,7 @@ const ThirdColumn = ({ className }: any) => {
                 {
                     listItems.map((itm: any, index) => {
                         return (
-                            <li>
+                            <li key={index} >
                                 <IoIosArrowForward />
                                 <span>
                                     {itm.item}

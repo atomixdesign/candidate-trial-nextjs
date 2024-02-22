@@ -8,7 +8,8 @@ const SliderSection = ({ title, image, content }: any) => {
         <div className='sliderSectionContainer'>
             <div className='row'>
                 <div className='column first_col'>
-                    <img src={image} alt={title} />
+                    {/* <Image src={SliderImage} alt='SliderImage' /> */}
+                    <Image src={image} alt={title} width={200} height={350} />
                 </div>
                 <div className='column second_col'>
                     <h4>

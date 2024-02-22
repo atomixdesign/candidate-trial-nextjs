@@ -11,6 +11,7 @@ import { IoMdAdd } from "react-icons/io";
 import MenuItem from '../MenuItem/MenuItem';
 import Button from '../Button/Button';
 import { usePathname } from 'next/navigation';
+import WeatherWidget from '../Weather/WeatherWidget';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -53,7 +54,9 @@ const Navbar = () => {
                             </li>
                         );
                     })}
+                    <WeatherWidget />
                 </ul>
+
                 <div className='endBtn'>
                     <Button className='gray_contact_btn'>
                         CONTACT US

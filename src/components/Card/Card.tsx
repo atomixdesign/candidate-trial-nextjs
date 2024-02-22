@@ -1,11 +1,12 @@
 import React from 'react'
 import './Card.component.scss'
+import Image from 'next/image'
 
-const Card = ({ index, member }: any) => {
+const Card = ({ key, member }: any) => {
     return (
-        <div className="card" key={index}>
+        <div className="card" key={key}>
             <div className="card-hero">
-                <img src={member.image} width={288} />
+                <Image src={member.image} alt={key} width={288} height={350} />
             </div>
             <div className="card-header">
                 <h4>{member.position}</h4>

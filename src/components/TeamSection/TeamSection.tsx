@@ -1,8 +1,10 @@
+'use client'
 import React from 'react'
 import './TeamSection.component.scss'
 import TeamMember from '@/data/TeamMembers.json';
 import Card from '../Card/Card';
-import FlickityContainer from '../Flickity/FlickityContainer';
+import Slider from 'react-slick';
+import SliderComponent from '../SliderComponent/SliderComponent';
 
 const TeamSection = () => {
     return (
@@ -13,7 +15,7 @@ const TeamSection = () => {
                     {
                         TeamMember.map((member, index) => {
                             return (
-                                <Card index={index} member={member} />
+                                <Card key={index} member={member} />
                             )
                         })
                     }
@@ -22,16 +24,16 @@ const TeamSection = () => {
             </div>
             <div className='mobile_team_section_container'>
                 <h2>Team Section</h2>
-                <div className='mobile_cards'>
-                    <FlickityContainer>
+                <div className='mobile_cards slider-container'>
+                    <SliderComponent>
                         {
                             TeamMember.map((member, index) => {
                                 return (
-                                    <Card index={index} member={member} />
+                                    <Card key={index} member={member} />
                                 )
                             })
                         }
-                    </FlickityContainer>
+                    </SliderComponent>
                 </div>
             </div>
 

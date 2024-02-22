@@ -1,0 +1,97 @@
+.weather_main {
+    color: #333;
+    font-family: sans-serif;
+    display: grid;
+    place-content: center;
+
+    .weather-container {
+        position: relative;
+
+        .weather-target {
+            position: relative;
+            font-size: 3rem;
+        }
+
+        .weather-target:hover+.weather-popup,
+        .weather-target:focus+.weather-popup,
+        .weather-popup:hover {
+            transform: scale(1);
+        }
+
+        .weather-popup {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            top: 40px;
+            left: -20px;
+            width: 35ch;
+            margin: min(1rem, 20px);
+            font-size: .8rem;
+            background-color: #b6b6b6;
+            border-radius: 8px;
+            padding: 1.5em;
+            z-index: 42;
+            transform: scale(0);
+            transition: transform 200ms ease;
+            transform-origin: 8% -10px;
+
+            h2,
+            p {
+                margin: 0 0 8px 0;
+            }
+
+            &:not(:first-child) {
+                margin-top: 1rem;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid #b6b6b6;
+                top: -10px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: -1rem;
+                right: 0;
+                bottom: 0;
+                left: 100%;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    ::before,
+    ::after {
+        animation-delay: -1ms !important;
+        animation-duration: -1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}
+
+@media only screen and (max-width: 1185px) {
+    .weather_main {
+        .weather-container {
+            .weather-popup {
+                left: -120px;
+
+                &::before {
+                    margin-left: 100px;
+                }
+            }
+        }
+    }
+}
