@@ -4,13 +4,12 @@ import './CarouselSection.component.scss'
 import SliderItems from '@/data/SliderItems.json'
 import SliderSection from './SliderSection/SliderSection'
 import SliderComponent from '../SliderComponent/SliderComponent'
+import Title from '../Title/Title'
 
 const CarouselSection = () => {
     return (
         <div className='carouselSlider'>
-            <div className='heading'>
-                Carousel section
-            </div>
+            <Title title={'Carousel section'} />
             <div className='slider-container'>
                 <SliderComponent>
                     {

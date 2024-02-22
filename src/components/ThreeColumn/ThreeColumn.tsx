@@ -3,13 +3,12 @@ import './ThreeColumn.component.scss'
 import FirstColumn from './Columns/FirstColumn'
 import ThirdColumn from './Columns/ThirdColumn'
 import SecondColumn from './Columns/SecondColumn'
+import Title from '../Title/Title'
 
 const ThreeColumn = () => {
     return (
         <div className='threeColumnContainer'>
-            <div className='heading'>
-                Three column with image
-            </div>
+            <Title title={'Three column with image'} />
             <section>
                 <div className='row'>
                     <FirstColumn className={`column first_col`} />

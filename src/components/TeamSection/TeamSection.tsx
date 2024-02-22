@@ -5,12 +5,13 @@ import TeamMember from '@/data/TeamMembers.json';
 import Card from '../Card/Card';
 import Slider from 'react-slick';
 import SliderComponent from '../SliderComponent/SliderComponent';
+import Title from '../Title/Title';
 
 const TeamSection = () => {
     return (
         <>
             <div className='team_section_container'>
-                <h2>Team Section</h2>
+                <Title title={'Team Section'} />
                 <div className="cards">
                     {
                         TeamMember.map((member, index) => {
@@ -23,7 +24,7 @@ const TeamSection = () => {
 
             </div>
             <div className='mobile_team_section_container'>
-                <h2>Team Section</h2>
+                <Title title={'Team Section'} />
                 <div className='mobile_cards slider-container'>
                     <SliderComponent>
                         {

@@ -7,10 +7,6 @@
     align-items: center;
     padding: 60px 0;
 
-    h2 {
-        padding: 25px 0;
-    }
-
     .cards {
         max-width: 100%;
         display: grid;
@@ -19,16 +15,12 @@
         row-gap: 2rem;
         grid-auto-flow: dense;
         align-items: start;
+        padding-top: 40px;
     }
 }
 
 .mobile_team_section_container {
     display: none;
-
-    h2 {
-        padding: 25px 0;
-        text-align: center;
-    }
 }
 
 
