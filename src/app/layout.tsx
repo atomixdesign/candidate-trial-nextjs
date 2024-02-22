@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import CommonHeader from '@/components/header/Header';
-import Footer from '@/components/footer/Footer';
-import { getHeaderData } from '@/actions/rawActions';
-import { Header } from '@/definitions/definitions';
+import CommonFooter from '@/components/footer/Footer';
+import { getFooterData, getHeaderData } from '@/actions/rawActions';
+import { Footer, Header } from '@/definitions/definitions';
 import CommonHelper from '@/helpers/common';
 
 import './assets/scss/main.scss';
@@ -29,13 +29,14 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const headerData: Header = getHeaderData();
+  const footerData: Footer = getFooterData();
   return (
     <html lang='en'>
       <body className={inter.className}>
         <div>
           <CommonHeader headerData={headerData} />
           {children}
-          <Footer />
+          <CommonFooter footerData={footerData} />
         </div>
       </body>
     </html>

@@ -19,7 +19,7 @@ function Member(props: TeamSinglData) {
   return (
     <div className='col-md-4 col-lg-4'>
       <div className={styles.card}>
-        <Image src={imageSrc} className='card-img-top' alt={imgAlt} height={254} width={408} />
+        <img src={imageSrc} className='card-img-top' alt={imgAlt} />
         <div className={styles.cardBody}>
           <span className='card-title'>{principle}</span>
           <h5 className='card-text'>{name}</h5>

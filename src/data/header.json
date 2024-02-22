@@ -2,7 +2,69 @@
   "logoImagePath": "/company-logo.png",
   "logoImageAlt": "Company Logo",
   "about": {
+    "title": "About",
     "imagePath": "/mega-menu-image-1.png",
-    "imageAlt": "Mega menu image"
+    "imageAlt": "Mega menu image",
+    "links": [
+      {
+        "title": "About sample link 1",
+        "subLinks": [
+          {
+            "title": "About menu item 1",
+            "link": "/sample-link-1/menu-1"
+          },
+          {
+            "title": "About menu item 2",
+            "link": "/sample-link-1/menu-2"
+          },
+          {
+            "title": "About menu item 3",
+            "link": "/sample-link-1/menu-3"
+          },
+          {
+            "title": "About menu item 4",
+            "link": "/sample-link-1/menu-4"
+          }
+        ]
+      },
+      {
+        "title": "About sample link 2",
+        "subLinks": [
+          {
+            "title": "About menu item 1",
+            "link": "/sample-link-2/menu-1"
+          },
+          {
+            "title": "About menu item 2",
+            "link": "/sample-link-2/menu-2"
+          },
+          {
+            "title": "About menu item 3",
+            "link": "/sample-link-2/menu-3"
+          },
+          {
+            "title": "About menu item 4",
+            "link": "/sample-link-2/menu-4"
+          }
+        ]
+      }
+    ]
+  },
+  "otherLinks": [
+    {
+      "title": "Services",
+      "link": "/services"
+    },
+    {
+      "title": "FAQs",
+      "link": "/faqs"
+    },
+    {
+      "title": "News",
+      "link": "/news"
+    }
+  ],
+  "contact": {
+    "label": "Contact Us"
   }
 }

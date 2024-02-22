@@ -4,6 +4,8 @@ import { getWeatherData } from '@/actions/serverActions';
 import { getWeatherPermissions } from '@/utils/weather';
 import { GeoLocation, WeatherData } from '@/definitions/definitions';
 
+import styles from './Weather.module.scss';
+
 /**
  * Represents the Weather component, responsible for fetching and displaying weather data.
  *
@@ -36,7 +38,7 @@ function Weather() {
   }
 
   return (
-    <div className='container text-end'>
+    <div className={styles.weather}>
       <div className='row'>
         <span>
           {weatherData.main?.temp}&deg; <i className='fi fi-rs-temperature-high' />

@@ -1,5 +1,4 @@
 import { Button } from 'react-bootstrap';
-import Image from 'next/image';
 
 import { MainCarouselSinglData } from '@/definitions/definitions';
 
@@ -19,7 +18,7 @@ function Slide({ data }: { data: DataProps }) {
     <div className='row justify-content-center'>
       <div className='col-md-5 col-lg-5'>
         <div className={styles.image}>
-          <Image src={data.imageSrc} alt={data.imageAlt} height={416} width={627} />
+          <img src={data.imageSrc} alt={data.imageAlt} />
         </div>
       </div>
       <div className={`col-md-7 col-lg-7 ${styles.details}`}>

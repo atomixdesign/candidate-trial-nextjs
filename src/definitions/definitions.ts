@@ -11,13 +11,42 @@ export enum Cache_Methods {
   NO_STORE = 'no-store',
 }
 
+export type SubLink = {
+  title: string;
+  link: string;
+};
+
+export type Link = {
+  title: string;
+  subLinks: SubLink[];
+};
+
+export type Links = Link[];
+
 export type Header = {
   logoImagePath: string;
   logoImageAlt: string;
   about: {
+    title: string;
     imagePath: string;
     imageAlt: string;
+    links: Links;
   };
+  otherLinks: SubLink[];
+  contact: {
+    label: string;
+  };
+};
+
+export type SocialMediaLink = {
+  icon: string;
+  link: string;
+};
+
+export type Footer = {
+  sitemap: Link[];
+  others: SubLink[];
+  socialMedia: SocialMediaLink[];
 };
 
 export type Banner = {

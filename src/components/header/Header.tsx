@@ -8,17 +8,14 @@ import { Navbar, NavDropdown } from 'react-bootstrap';
 
 import routesHelper from '@/helpers/routes';
 import { Header } from '@/definitions/definitions';
+import DesktopLinks from './links/DesktopLinks';
+import MobileLinks from './links/MobileLinks';
 import Weather from './weather/Weather';
 
 import styles from './Header.module.scss';
 
-function Header({ headerData }: { headerData: Header | false }) {
-  if (!headerData) {
-    return;
-  }
-
-  const { logoImagePath, logoImageAlt, about } = headerData;
-
+function Header({ headerData }: { headerData: Header }) {
+  const { logoImagePath, logoImageAlt, about, otherLinks, contact } = headerData;
   return (
     <header className={styles.header}>
       <Navbar expand='lg'>
@@ -26,70 +23,44 @@ function Header({ headerData }: { headerData: Header | false }) {
           <Navbar.Brand href={routesHelper.HOME} bsPrefix={`navbar ${styles.logo}`}>
             <Image src={logoImagePath} alt={logoImageAlt} width={289} height={37} priority />
           </Navbar.Brand>
+          <Weather />
           <div className={styles.toggler}>
             <Navbar.Toggle aria-controls='navbarScroll' />
           </div>
           <Navbar.Collapse id='navbarScroll' bsPrefix={`navbar-collapse ${styles.navbarCollapse}`}>
             <Nav className='ms-auto me-auto my-2 my-lg-0'>
-              <NavDropdown title='About' id='navbarScrollingDropdown'>
+              <NavDropdown title={about.title} id='navbarScrollingDropdown'>
                 <div className='desktop-menu'>
                   <div className='container'>
                     <div className='row'>
                       <div className='col-lg-4'>
                         <Image
-                          src={about?.imagePath}
-                          alt={about?.imageAlt}
+                          src={about.imagePath}
+                          alt={about.imageAlt}
                           width={296}
                           height={348.82}
                         />
                       </div>
-                      <div className='col-lg-4'>
-                        <h5>About sample link 1</h5>
-                        <Nav className='ms-auto me-auto my-2 my-lg-0 flex-column sub-menu-wrapper'>
-                          <Nav.Link href='#action1'>About menu item 1</Nav.Link>
-                          <Nav.Link href='#action2'>About menu item 2</Nav.Link>
-                          <Nav.Link href='#action3'>About menu item 3</Nav.Link>
-                          <Nav.Link href='#action4'>About menu item 4</Nav.Link>
-                        </Nav>
-                      </div>
-                      <div className='col-lg-4'>
-                        <h5>About sample link 2</h5>
-                        <Nav className='ms-auto me-auto my-2 my-lg-0 flex-column sub-menu-wrapper'>
-                          <Nav.Link href='#action1'>About menu item 1</Nav.Link>
-                          <Nav.Link href='#action2'>About menu item 2</Nav.Link>
-                          <Nav.Link href='#action3'>About menu item 3</Nav.Link>
-                          <Nav.Link href='#action4'>About menu item 4</Nav.Link>
-                        </Nav>
-                      </div>
+                      <DesktopLinks links={about.links} />
                     </div>
                   </div>
                 </div>
                 <div className='mobile-menu'>
-                  <NavDropdown title='About sample link 1' id='navbarScrollingDropdown'>
-                    <NavDropdown.Item href='#action1'>About menu item 1</NavDropdown.Item>
-                    <NavDropdown.Item href='#action2'>About menu item 2</NavDropdown.Item>
-                    <NavDropdown.Item href='#action3'>About menu item 3</NavDropdown.Item>
-                    <NavDropdown.Item href='#action4'>About menu item 4</NavDropdown.Item>
-                  </NavDropdown>
-                  <NavDropdown title='About sample link 2' id='navbarScrollingDropdown'>
-                    <NavDropdown.Item href='#action1'>About menu item 1</NavDropdown.Item>
-                    <NavDropdown.Item href='#action2'>About menu item 2</NavDropdown.Item>
-                    <NavDropdown.Item href='#action3'>About menu item 3</NavDropdown.Item>
-                    <NavDropdown.Item href='#action4'>About menu item 4</NavDropdown.Item>
-                  </NavDropdown>
+                  <MobileLinks links={about.links} />
                 </div>
               </NavDropdown>
-              <Nav.Link href='/services'>Services</Nav.Link>
-              <Nav.Link href='/faqs'>FAQs</Nav.Link>
-              <Nav.Link href='news'>News</Nav.Link>
+              {otherLinks.map((otherLink, i) => (
+                <Nav.Link key={i} href={otherLink.link}>
+                  {otherLink.title}
+                </Nav.Link>
+              ))}
             </Nav>
             <Button variant='secondary' bsPrefix={`btn btn-secondary ${styles.contactUs}`}>
-              Contact Us
+              {contact.label}
             </Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Weather />
     </header>
   );
 }

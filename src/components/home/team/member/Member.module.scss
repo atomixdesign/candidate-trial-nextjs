@@ -12,7 +12,8 @@
     padding-left: 31px;
     img {
       object-fit: cover;
-      min-height: 254px;
+      width: auto;
+      height: 254px;
     }
     span {
       color: $primary;

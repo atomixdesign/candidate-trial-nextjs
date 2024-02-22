@@ -25,12 +25,10 @@ async function ThreeColumn() {
       <div className='row'>
         <div className='col-md-4 col-lg-4'>
           <h5>{data?.column1?.header}</h5>
-          <Image
+          <img
             src={data?.column1?.image?.src}
             alt={data?.column1?.image?.alt}
-            height={254}
-            width={408}
-            className='mb-4'
+            className={`mb-4 ${styles.img}`}
           />
         </div>
         <div className='col-md-4 col-lg-4'>
