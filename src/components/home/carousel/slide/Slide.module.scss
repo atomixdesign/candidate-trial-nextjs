@@ -1,0 +1,29 @@
+@import '~bootstrap/scss/mixins';
+
+@import '@/app/assets/scss/variables.scss';
+
+.image {
+  overflow: hidden;
+  img {
+    width: 627px;
+    height: auto;
+  }
+}
+
+.details {
+  text-align: left;
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+}
+
+.title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.description {
+  @include media-breakpoint-down(sm) {
+    text-align: left;
+  }
+}

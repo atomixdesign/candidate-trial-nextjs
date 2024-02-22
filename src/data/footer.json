@@ -1,0 +1,100 @@
+{
+  "sitemap": [
+    {
+      "title": "About",
+      "subLinks": [
+        {
+          "title": "About menu item 1",
+          "link": "/about/menu-item-1"
+        },
+        {
+          "title": "About menu item 2",
+          "link": "/about/menu-item-2"
+        },
+        {
+          "title": "About menu item 3",
+          "link": "/about/menu-item-3"
+        }
+      ]
+    },
+    {
+      "title": "Services",
+      "subLinks": [
+        {
+          "title": "Service menu item 1",
+          "link": "/service/menu-item-1"
+        },
+        {
+          "title": "Service menu item 2",
+          "link": "/service/menu-item-2"
+        },
+        {
+          "title": "Service menu item 3",
+          "link": "/service/menu-item-3"
+        }
+      ]
+    },
+    {
+      "title": "Footer links",
+      "subLinks": [
+        {
+          "title": "Footer menu item 1",
+          "link": "/footer/menu-item-1"
+        },
+        {
+          "title": "Footer menu item 2",
+          "link": "/footer/menu-item-2"
+        }
+      ]
+    },
+    {
+      "title": "Footer links",
+      "subLinks": [
+        {
+          "title": "Footer menu item 1",
+          "link": "/footer/menu-item-1"
+        },
+        {
+          "title": "Footer menu item 2",
+          "link": "/footer/menu-item-2"
+        }
+      ]
+    }
+  ],
+  "others": [
+    {
+      "title": "© 2022 Company Inc.",
+      "link": "/other/link-1"
+    },
+    {
+      "title": "Terms and conditions",
+      "link": "/other/link-2"
+    },
+    {
+      "title": "Privacy policy",
+      "link": "/other/link-3"
+    },
+    {
+      "title": "Website by atomix",
+      "link": "/other/link-4"
+    }
+  ],
+  "socialMedia": [
+    {
+      "icon": "fi fi-brands-facebook",
+      "link": "/facebook"
+    },
+    {
+      "icon": "fi fi-brands-twitter",
+      "link": "/twitter"
+    },
+    {
+      "icon": "fi fi-brands-instagram",
+      "link": "/instagram"
+    },
+    {
+      "icon": "fi fi-brands-linkedin",
+      "link": "/linkedin"
+    }
+  ]
+}

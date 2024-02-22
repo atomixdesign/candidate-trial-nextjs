@@ -1,0 +1,12 @@
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  @include media-breakpoint-down(md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.dark {
+  background-color: $white-400;
+}

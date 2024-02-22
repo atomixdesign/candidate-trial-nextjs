@@ -1,0 +1,10 @@
+@import '~bootstrap/scss/mixins';
+
+@import '../../../app/assets/scss//variables.scss';
+
+.weather {
+  margin-left: 53px;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}

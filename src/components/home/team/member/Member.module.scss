@@ -1,0 +1,27 @@
+@import '../../../../app/assets/scss/variables.scss';
+
+.card {
+  margin-bottom: 40px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  .cardBody {
+    background-color: $white-400;
+    padding-top: 44px;
+    padding-right: 31px;
+    padding-bottom: 45px;
+    padding-left: 31px;
+    img {
+      object-fit: cover;
+      width: auto;
+      height: 254px;
+    }
+    span {
+      color: $primary;
+      font-weight: $font-weight-bold;
+      font-size: 1rem;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+}

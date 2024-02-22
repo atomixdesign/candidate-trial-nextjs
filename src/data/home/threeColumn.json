@@ -1,0 +1,23 @@
+{
+  "title": "Three column with image",
+  "column1": {
+    "header": "Lorem ipsum dolor sit amet conse tetur sadipiscing elite dolore.",
+    "image": {
+      "src": "/beach.png",
+      "alt": "Picture of a beach"
+    }
+  },
+  "column2": {
+    "p1": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.",
+    "p2": "Et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur."
+  },
+  "column3": {
+    "ul": [
+      "Lorem ipsum dolor sit amet, consetetur",
+      "Sadipscing elitr, sed diam nonumy",
+      "Eirmod tempor invidunt ut labore et dolore",
+      "magna aliquyam erat, sed diam voluptua"
+    ],
+    "p": "Et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur."
+  }
+}
