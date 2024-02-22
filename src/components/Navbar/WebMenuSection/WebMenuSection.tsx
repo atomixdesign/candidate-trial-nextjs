@@ -24,7 +24,7 @@ const WebMenuSection = ({ menuItems, hoveredId }: any) => {
                         menuItem.menu.map((subMenuitem: any, subMenuindex: number) => {
                             console.log(subMenuitem.subMenu)
                             return (
-                                <p key={subMenuindex} style={{ height: '350px', margin: '0' }}>
+                                <p key={subMenuindex} style={{ height: '400px', margin: '0' }}>
                                     <h4>{subMenuitem.title}</h4>
                                     <div>
                                         {
@@ -43,7 +43,7 @@ const WebMenuSection = ({ menuItems, hoveredId }: any) => {
                     }
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 
