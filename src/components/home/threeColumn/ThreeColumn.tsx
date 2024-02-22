@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { getThreeColumnData } from '@/actions/actions';
+import { getThreeColumnData } from '@/actions/rawActions';
 import { ThreeColumn } from '@/definitions/definitions';
 
 import styles from './ThreeColumn.module.scss';
@@ -12,7 +12,7 @@ import styles from './ThreeColumn.module.scss';
  * @returns The JSX structure for the three-column layout.
  */
 async function ThreeColumn() {
-  const data: ThreeColumn | false = await getThreeColumnData();
+  const data: ThreeColumn = getThreeColumnData();
   if (!data) {
     return;
   }

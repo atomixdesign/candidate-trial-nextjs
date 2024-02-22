@@ -1,6 +1,6 @@
 import { Button } from 'react-bootstrap';
 
-import { getHomeBannerData } from '@/actions/actions';
+import { getHomeBannerData } from '@/actions/rawActions';
 import { Banner } from '@/definitions/definitions';
 
 import styles from './HomeBanner.module.scss';
@@ -12,7 +12,7 @@ import styles from './HomeBanner.module.scss';
  * @returns The JSX structure for the home page banner.
  */
 async function HomeBanner() {
-  const data: Banner | false = await getHomeBannerData();
+  const data: Banner = getHomeBannerData();
   if (!data) {
     return;
   }

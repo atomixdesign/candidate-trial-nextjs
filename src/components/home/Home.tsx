@@ -2,7 +2,7 @@ import HomeBanner from './homeBanner/HomeBanner';
 import ThreeColumn from './threeColumn/ThreeColumn';
 import Carousel from './carousel/Carousel';
 import Team from './team/Team';
-import { getCarouselData } from '@/actions/actions';
+import { getCarouselData } from '@/actions/rawActions';
 import { MainCarousel } from '@/definitions/definitions';
 
 /**
@@ -12,7 +12,7 @@ import { MainCarousel } from '@/definitions/definitions';
  * @returns The JSX structure for the home page.
  */
 async function Home() {
-  const carouselData: MainCarousel | false = await getCarouselData();
+  const carouselData: MainCarousel = getCarouselData();
   return (
     <div>
       <div className='section pt-0 pb-0'>

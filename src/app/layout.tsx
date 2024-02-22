@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 
 import CommonHeader from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
-import { getHeaderData } from '@/actions/actions';
+import { getHeaderData } from '@/actions/rawActions';
 import { Header } from '@/definitions/definitions';
 import CommonHelper from '@/helpers/common';
 
@@ -28,7 +28,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const headerData: Header | false = await getHeaderData();
+  const headerData: Header = getHeaderData();
   return (
     <html lang='en'>
       <body className={inter.className}>

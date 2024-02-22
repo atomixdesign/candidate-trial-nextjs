@@ -1,6 +1,6 @@
 import Grid from './grid/Grid';
 import CarouselWrapper from './carousel/Carousel';
-import { getTeamData } from '@/actions/actions';
+import { getTeamData } from '@/actions/rawActions';
 import { Team } from '@/definitions/definitions';
 
 /**
@@ -10,7 +10,7 @@ import { Team } from '@/definitions/definitions';
  * @returns The JSX structure for displaying team information.
  */
 async function Team() {
-  const members: Team | false = await getTeamData();
+  const members: Team = getTeamData();
 
   if (!members) {
     return;
