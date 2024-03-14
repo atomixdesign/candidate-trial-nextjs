@@ -1,0 +1,67 @@
+.carousel {
+    width: 100%;
+    background: #F7F7F7;
+    padding: 3rem;
+}
+
+
+.carouselCell {
+    width: 80%;
+    height: auto;
+    margin-right: 10px;
+    counter-increment: carousel-cell;
+    display: flex;
+    overflow-y: hidden;
+}
+.flickityButton {
+    color: #4B4F52;
+    background: none;
+    font-weight: lighter;
+}
+.flickity-button:hover {
+    background: none;
+}
+
+.slideImg {
+    width: 45%;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 416px;
+}
+
+.slideImg img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slideText {
+    width: 45%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.slideTitle {
+    font-size: 22px;
+    color: #4B4F52;
+    text-align: left;
+}
+
+.slidePara {
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+button.slideBtn {
+    background: #CCAE92;
+    padding: 10px 16px;
+    border: none;
+    margin-top: 15px;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+ol.flickity-page-dots {
+    margin-bottom: 70px;
+}

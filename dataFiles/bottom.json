@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "text": "© 2022 company inc."
+    },
+    {
+        "id": 1,
+        "text": "Terms and condition",
+        "href": "/terms-condition"
+    },{
+        "id": 1,
+        "text": "Privacy policy",
+        "href": "/privacy-policy"
+    },{
+        "id": 1,
+        "text": "Website by atomix",
+        "href": "www.atomix.com"
+    }
+]
