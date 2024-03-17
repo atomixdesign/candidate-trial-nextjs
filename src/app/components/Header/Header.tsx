@@ -2,6 +2,8 @@ import React from "react";
 import { promises as fs, link } from 'fs';
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
+import Link from "next/link";
+import WeatherWidget from "../WeatherWidget/WeatherWidget";
  
 interface Link {
   id: number,
@@ -13,9 +15,10 @@ const headerFile = await fs.readFile(process.cwd() + '/dataFiles/menu.json', 'ut
 const links = JSON.parse(headerFile);
     
   return (
+    <>
     <nav>
-      <a href="" className="logo">Company Logo</a>
-      <MobileMenu />
+      <a href="#" className="logo">Company Logo</a>
+      <a href="#" key={1000} id="humburger"><i className="fas fa-bars" ></i></a>
       {links.map(link  => 
         (
           link.sublinks ? (
@@ -39,7 +42,7 @@ const links = JSON.parse(headerFile);
                         {sublink.submenu ? (
                           <div key={sublink.submenu.id}>
                             {sublink.submenu.map( lalink => (
-                              <a href="#" key={lalink.id}>{lalink.text}</a>
+                              <Link href="#" key={lalink.id}>{lalink.text}</Link>
                             ))}
                           </div>
                         ) : (
@@ -51,17 +54,22 @@ const links = JSON.parse(headerFile);
                 </div>
               </div>
             ) : (
-              <a
+              <Link
                 href={link.href}
                 key={link.id}
-                className={` ${link.class ? link.class : "" }`}
+                className={`navItem ${link.class ? link.class : "" }`}
                 >
                   {link.text}
-                </a>
+                </Link>
             )
           )
         )}
+        <div className="weatherWidget">
+          <WeatherWidget />
+        </div>
     </nav>
+    </>
+    
   );
 }
 export default Header

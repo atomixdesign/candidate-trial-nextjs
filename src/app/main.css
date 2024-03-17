@@ -110,7 +110,7 @@ nav a {
 .navBtn {
     background: #EFEAE5;
     padding: 10px 16px;
-    margin-left: auto;
+    margin: 20px 0 20px auto;
 }
 
 .homepage-banner {
@@ -165,6 +165,9 @@ img.content-image {
 }
 .main-col-3 p {
     margin-bottom: 10px;
+}
+.main-col-3 li {
+    list-style: none;
 }
 .main-col-3 li i{
     margin-right: 5px;
@@ -241,18 +244,29 @@ img.content-image {
         font-size: 25px;
     }
 
-    nav ul {
+    nav ul, nav .dropdown, nav a.navItem {
         display: none;
     }
+
     .homepage-banner {
         height: 607px;
     }
-    .banner-title p {
+    .banner-content h2.banner-title {
         font-size: 28px;
+    }
+    .banner-content .content-btn {
+        margin-top: 30px;
     }
     .main-content {
         padding: 3rem 7%;
+        padding-bottom: 1rem;
 
+    }
+    .main-col-3 {
+        width: 100%;
+    }
+    .main-col-3 li {
+        list-style: none;
     }
     .content-title {
         justify-content: left;
@@ -278,7 +292,7 @@ img.content-image {
         display: none;
     }
     .carousel {
-        padding: 1rem;
+        padding: 0;
     }
     .carousel-cell {
         flex-direction: column;
@@ -300,6 +314,9 @@ img.content-image {
     .carousel .flickity-button {
         display: none;
     }
+    .flickity-button, .flickity-button:hover {
+        display: none;
+    }
     .team-carousel {
         display: flex;
     }
@@ -316,6 +333,9 @@ img.content-image {
     }
     .footer {
         padding: 2rem 7%;
+    }
+    .footer .logo {
+        font-size: 20px;
     }
     .footer-columns {
         flex-direction: column;

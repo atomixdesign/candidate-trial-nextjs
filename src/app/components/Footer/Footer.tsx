@@ -1,5 +1,6 @@
 import React from "react";
 import { promises as fs, link } from 'fs';
+import Link from "next/link";
 
 const Footer = async() => {
     const footerFile = await fs.readFile(process.cwd() + '/dataFiles/footer.json', 'utf-8');
@@ -24,7 +25,7 @@ const Footer = async() => {
                             <div className="title">{link.text}</div>
                             <ul>
                                 {link.submenu.map(subm => (
-                                    <li key={subm.id}><a href={subm.href}>{subm.text}</a></li>
+                                    <li key={subm.id}><Link href={subm.href}>{subm.text}</Link></li>
                                 ))}
                             </ul>
                         </div>
@@ -40,7 +41,7 @@ const Footer = async() => {
                     {blinks.map(blin => (
                         <>
                         {blin.href ? (
-                            <li key={blin.id}><a href={blin.href}>{blin.text}</a></li>
+                            <li key={blin.id}><Link href={blin.href}>{blin.text}</Link></li>
                         ) : (
                             <li key={blin.id}>{blin.text}</li>
                         )}
