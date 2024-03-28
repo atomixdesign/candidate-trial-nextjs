@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "facebook",
+        "class": "fa-facebook",
+        "href": "www.facebook.com"
+    },{
+        "id": 1,
+        "name": "twitter",
+        "class": "fa-twitter",
+        "href": "www.twitter.com"
+    },{
+        "id": 1,
+        "name": "instagram",
+        "class": "fa-instagram",
+        "href": "www.instagram.com"
+    },{
+        "id": 1,
+        "name": "linkedin",
+        "class": "fa-linkedin-square",
+        "href": "www.linkedin.com"
+    },{
+        "id": 1,
+        "name": "youtube",
+        "class": "fa-youtube-play",
+        "href": "www.youtube.com"
+    }
+]

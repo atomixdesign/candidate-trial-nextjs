@@ -1,0 +1,76 @@
+[
+    {
+        "id":1,
+        "text": "About",
+        "submenu": [
+            {
+                "id":1,
+                "text": "About menu item 1",
+                "href": "/about/menu-item-1"
+            },
+            {
+                "id":1,
+                "text": "About menu item 2",
+                "href": "/about/menu-item-2"
+            },
+            {
+                "id":1,
+                "text": "About menu item 3",
+                "href": "/about/menu-item-3"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "text": "Services",
+        "submenu": [
+            {
+                "id":1,
+                "text": "Services menu item 1",
+                "href": "/services/menu-item-1"
+            },
+            {
+                "id":1,
+                "text": "Services menu item 2",
+                "href": "/services/menu-item-2"
+            },
+            {
+                "id":1,
+                "text": "Services menu item 3",
+                "href": "/services/menu-item-3"
+            }
+        ]
+    },
+    {
+        "id":3,
+        "text": "Footer links",
+        "submenu": [
+            {
+                "id":1,
+                "text": "Footer menu item 1",
+                "href": "/footer/menu-item-1"
+            },
+            {
+                "id":1,
+                "text": "Footer menu item 2",
+                "href": "/footer/menu-item-2"
+            }
+        ]
+    },
+    {
+        "id":4,
+        "text": "Footer links",
+        "submenu": [
+            {
+                "id":1,
+                "text": "Footer menu item 1",
+                "href": "/footer2/menu-item-1"
+            },
+            {
+                "id":1,
+                "text": "Footer menu item 2",
+                "href": "/footer2/menu-item-2"
+            }
+        ]
+    }
+]

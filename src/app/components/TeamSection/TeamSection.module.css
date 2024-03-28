@@ -1,0 +1,82 @@
+
+.teamSection {
+    padding: 5rem 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teamSection .title {
+    font-size: 34px;
+    color: #4B4F52;
+    text-align: center;
+    margin-bottom: 2rem;
+    flex-basis: 100%;
+}
+
+.teamItem {
+    flex-direction: row;
+    margin: 1rem;
+    width: 30%;
+    background: #F7F7F7
+}
+
+.teamPos {
+    font-size: 16px;
+    color: #CCAE92;
+    padding: 1rem;
+}
+
+.teamPhoto img {
+    width: 100%;
+}
+
+.teamName {
+    font-size: 22px;
+    color: #4B4F52;
+    padding: 1rem;
+    padding-top: 0;
+}
+.teamCarousel {
+    display: none;
+}
+
+.contentImage {
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .teamMobile {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .teamSection {
+        display: none;
+    }
+    .userInfo{
+        margin: 10px 0 10px 30px;
+    }
+    .teamMobile .userPos{
+        color: #CCAE92;
+        font-size: 12px;
+    }
+    .teamMobile .userName {
+        color: #4B4F52;
+        font-size: 18px;
+    }
+    .teamMobile .title{
+        margin: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #4B4F52;
+    }
+}
+
+@media (min-width: 375px) {
+    .teamMobile {
+        display: none;
+    }
+
+}

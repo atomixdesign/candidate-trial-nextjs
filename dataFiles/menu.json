@@ -1,0 +1,82 @@
+[
+    {
+        "id":1,
+        "text": "About",
+        "href": "/about",
+        "sublinks": [
+            {
+                "id": 1,
+                "text": "About Sample links 1",
+                "submenu": [
+                    {
+                        "id": 1,
+                        "text": "About menu item 11",
+                        "href": "/sample-link-1/menu-item-1"
+                    },
+                    {
+                        "id": 2,
+                        "text": "About menu item 12",
+                        "href": "/sample-link-1/menu-item-2"
+                      },
+                      {
+                        "id": 3,
+                        "text": "About menu item 13",
+                        "href": "/sample-link-1/menu-item-3"
+                      },
+                      {
+                        "id": 4,
+                        "text": "About menu item 14",
+                        "href": "/sample-link-1/menu-item-4"
+                      }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "About Sample links 2",
+                "submenu": [
+                    {
+                        "id": 1,
+                        "text": "About menu item 21",
+                        "href": "/sample-link-1/menu-item-1"
+                    },
+                    {
+                        "id": 2,
+                        "text": "About menu item 2",
+                        "href": "/sample-link-1/menu-item-2"
+                      },
+                      {
+                        "id": 3,
+                        "text": "About menu item 3",
+                        "href": "/sample-link-1/menu-item-3"
+                      },
+                      {
+                        "id": 4,
+                        "text": "About menu item 4",
+                        "href": "/sample-link-1/menu-item-4"
+                      }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "Services",
+        "href": "/services"
+    },
+    {
+        "id": 3,
+        "text": "FAQs",
+        "href": "/faqs"
+    },
+    {
+        "id": 4,
+        "text": "News",
+        "href": "/news"
+    },
+    {
+        "id": 5,
+        "text": "Contact Us",
+        "href": "",
+        "class": "navBtn"
+    }
+]

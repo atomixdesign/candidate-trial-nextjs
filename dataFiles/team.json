@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Kym Williams",
+    "position": "Managing Director",
+    "photo": "/BlogImage4.png"
+  },
+  {
+    "id": 2,
+    "name": "Angus Mitchell",
+    "position": "Associate",
+    "photo": "/BlogImage2.png"
+  },
+  {
+    "id": 3,
+    "name": "Anita Payne",
+    "position": "Associate",
+    "photo": "/BlogImage.png"
+  },
+  {
+    "id": 4,
+    "name": "Kym Williams",
+    "position": "Associate",
+    "photo": "/BlogImage5.png"
+  },
+  {
+    "id": 5,
+    "name": "Amy Cole",
+    "position": "Associate",
+    "photo": "/BlogImage3.png"
+  },
+  {
+    "id": 6,
+    "name": "David Brown",
+    "position": "Associate",
+    "photo": "/BlogImage1.png"
+  }
+]

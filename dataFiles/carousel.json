@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image": "/MaskGroup3.png",
+        "imgWidth": 627,
+        "imgHeight": 416,
+        "alt": "Carousel",
+        "title": "Slide title 1",
+        "btnTxt": "Button",
+        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum"
+    },
+    {
+        "id": 2,
+        "image": "/MaskGroup3.png",
+        "imgWidth": 627,
+        "imgHeight": 416,
+        "alt": "Carousel",
+        "title": "Slide title 2",
+        "btnTxt": "Button 2",
+        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum"
+    },
+    {
+        "id": 3,
+        "image": "/MaskGroup3.png",
+        "imgWidth": 627,
+        "imgHeight": 416,
+        "alt": "Carousel",
+        "title": "Slide title 3",
+        "btnTxt": "Button 3",
+        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum"
+    }
+]
