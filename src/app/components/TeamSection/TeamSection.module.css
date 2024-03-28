@@ -1,3 +1,4 @@
+
 .teamSection {
     padding: 5rem 10%;
     display: flex;
@@ -42,4 +43,40 @@
 .contentImage {
     width: 100%;
     height: auto;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .teamMobile {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .teamSection {
+        display: none;
+    }
+    .userInfo{
+        margin: 10px 0 10px 30px;
+    }
+    .teamMobile .userPos{
+        color: #CCAE92;
+        font-size: 12px;
+    }
+    .teamMobile .userName {
+        color: #4B4F52;
+        font-size: 18px;
+    }
+    .teamMobile .title{
+        margin: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #4B4F52;
+    }
+}
+
+@media (min-width: 375px) {
+    .teamMobile {
+        display: none;
+    }
+
 }

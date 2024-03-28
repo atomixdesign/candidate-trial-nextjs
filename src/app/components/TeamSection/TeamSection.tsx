@@ -15,6 +15,7 @@ const TeamSection = async () => {
     const users: User[] = JSON.parse(file);
 
     return (
+        <>
         <div className={steam.teamSection}>
             <div className={steam.title}>Team section</div>
             {users.map(user =>
@@ -33,6 +34,29 @@ const TeamSection = async () => {
                 </div>
             )}
         </div>
+
+        <div className={steam.teamMobile}>
+            <div className={steam.title}>Team section</div>
+            <div className="" data-flickity='{ "wrapAround": true }'>
+                {users.map(user => (
+                    <div className="" key={user.id}>
+                        <div className={steam.userPhoto}>
+                            <Image
+                                src={user.photo}
+                                alt={user.name}
+                                width={408}
+                                height={254}
+                            />
+                        </div>
+                        <div className={steam.userInfo}>
+                            <div className={steam.userPos}>{user.position}</div>
+                            <div className={steam.userName}>{user.name}</div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+        </>
     );
 }
 
